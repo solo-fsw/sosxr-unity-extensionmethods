@@ -1,7 +1,16 @@
-# SOValue
+# Extension Methods
 
-This is based on the work by Ryan Hipple, which he presented in the Unity 2017 conference.
-Creating ScriptableObjects for each variable allows them to be referenced by multiple scripts quite easily.
+This folder contains extension methods for various types in Unity.
 
-The downside is, that SOs cannot retain any changes to data you provide in in a Build of the program, once you change scene. That is a bit of a pity, since then a variable changed in Scene 1 will be reset to it’s original value once you go to Scene 2. To circumvent this, you can store all Scriptable Object variables in a DontDestroyOnLoad script which is present in the first Scene. This then makes sure the data is retained for the duration of the program. 
 
+- By: Maarten R. Struijk Wilbrink
+- For: Leiden University SOSXR
+- Fully open source: Feel free to add to, or modify, anything you see fit.
+
+
+
+## Installation
+1. Open the Unity project you want to install the gizmos into.
+2. Open the Package Manager window.
+3. Click on the `+` button and select `Add package from git URL...`.
+4. Paste the URL of this repo into the text field and press `Add`.
