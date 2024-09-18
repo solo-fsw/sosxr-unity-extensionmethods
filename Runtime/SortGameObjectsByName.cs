@@ -2,11 +2,14 @@ using System.Collections;
 using UnityEngine;
 
 
-public class SortGameObjectsByName : IComparer
+namespace SOSXR.Extensions
 {
-    // Calls CaseInsensitiveComparer.Compare on the name string.
-    int IComparer.Compare(object x, object y)
+    public class SortGameObjectsByName : IComparer
     {
-        return new CaseInsensitiveComparer().Compare(((GameObject) x)?.name, ((GameObject) y)?.name);
+        // Calls CaseInsensitiveComparer.Compare on the name string.
+        int IComparer.Compare(object x, object y)
+        {
+            return new CaseInsensitiveComparer().Compare(((GameObject) x)?.name, ((GameObject) y)?.name);
+        }
     }
 }

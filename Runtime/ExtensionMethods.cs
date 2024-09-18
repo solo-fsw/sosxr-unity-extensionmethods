@@ -10,7 +10,7 @@ using UnityEditor.Events;
 #endif
 
 
-namespace mrstruijk.Extensions
+namespace SOSXR.Extensions
 {
     public static class ExtensionMethods
     {

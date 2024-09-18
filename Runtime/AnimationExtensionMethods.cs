@@ -6,7 +6,7 @@ using UnityEditor.Animations;
 #endif
 
 
-namespace mrstruijk.Extensions
+namespace SOSXR.Extensions
 {
     public static class AnimationExtensionMethods
     {

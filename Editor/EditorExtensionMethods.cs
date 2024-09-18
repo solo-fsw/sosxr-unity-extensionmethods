@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 
 
-namespace mrstruijk.Extensions
+namespace SOSXR.Extensions
 {
     public static class EditorExtensionMethods
     {
