@@ -38,7 +38,7 @@ namespace SOSXR.Extensions
 
         /// <summary>
         ///     How far & in what direction do I need to go?
-        ///     For each axis in 'axisToUse' that is set to 0, the displacement will also be 0.
+        ///     For each axis in 'axisToUe' that is set to 0, the displacement will also be 0.
         /// </summary>
         /// <returns></returns>
         public static Vector3 CalculateDisplacement(this Vector3 originPos, Vector3 targetPos, Vector3 axisToUse)
@@ -1139,6 +1139,18 @@ namespace SOSXR.Extensions
             var rounded = (float) Math.Round(originalAsDecimal, decimals, midwayRounding);
 
             return rounded;
+        }
+
+
+        /// <summary>
+        ///     This rounds a double to specified decimals: otherwise issues to round .5 values (e.g. 3.5 to 4, or 6.555 to 6.56)
+        /// </summary>
+        /// <param name="originalValue"></param>
+        /// <param name="decimals"></param>
+        /// <returns></returns>
+        public static double RoundCorrectly(this double originalValue, int decimals)
+        {
+            return RoundCorrectly((float) originalValue, decimals);
         }
 
 
