@@ -1,6 +1,6 @@
 {
   "name": "com.sosxr.extensionmethods",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "Extension Methods",
   "description": "A collection of extension methods for Unity.",
   "unity": "2021.3",

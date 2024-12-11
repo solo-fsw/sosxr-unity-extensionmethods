@@ -1472,5 +1472,45 @@ namespace SOSXR.Extensions
         {
             return Random.Range(range.x, range.y);
         }
+
+
+        /// <summary>
+        ///     Gets last digit of a number
+        /// </summary>
+        public static int GetLastDigit(this int number)
+        {
+            var positiveNumber = Math.Abs(number);
+
+            return positiveNumber % 10;
+        }
+
+
+        /// <summary>
+        ///     Divides the dividend by the divisor and returns the remainder.
+        ///     E.g. 10.GetRemainder(3) returns 1
+        ///     E.g. 10.GetRemainder(0) returns 0
+        ///     E.g. 5.GetRemainder(6) returns 5
+        /// </summary>
+        /// <param name="dividend"></param>
+        /// <param name="divisor"></param>
+        /// <returns></returns>
+        public static int GetRemainder(this int dividend, int divisor)
+        {
+            if (divisor == 0)
+            {
+                Debug.LogError("GetRemainder " + " Cannot divide by 0");
+
+                return 0;
+            }
+
+            if (divisor > dividend)
+            {
+                Debug.Log("GetRemainder " + " A larger divisor will always return the dividend");
+
+                return dividend;
+            }
+
+            return dividend % divisor;
+        }
     }
 }
