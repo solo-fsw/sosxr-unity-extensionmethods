@@ -304,6 +304,50 @@ namespace SOSXR.Extensions
 
 
         /// <summary>
+        ///     Sorts GameObjects by name
+        /// </summary>
+        /// <param name="gameObjects"></param>
+        public static void SortByName(this List<GameObject> gameObjects)
+        {
+            gameObjects.Sort((x, y) =>
+                string.Compare(x?.name, y?.name, StringComparison.OrdinalIgnoreCase));
+        }
+
+
+        /// <summary>
+        ///     Sorts GameObjects by name
+        /// </summary>
+        /// <param name="gameObjects"></param>
+        public static void SortByName(this GameObject[] gameObjects)
+        {
+            Array.Sort(gameObjects, (x, y) =>
+                string.Compare(x?.name, y?.name, StringComparison.OrdinalIgnoreCase));
+        }
+
+
+        /// <summary>
+        ///     Sorts Transforms by name
+        /// </summary>
+        /// <param name="transforms"></param>
+        public static void SortByName(this List<Transform> transforms)
+        {
+            transforms.Sort((x, y) =>
+                string.Compare(x?.name, y?.name, StringComparison.OrdinalIgnoreCase));
+        }
+
+
+        /// <summary>
+        ///     Sorts Transforms by name
+        /// </summary>
+        /// <param name="transforms"></param>
+        public static void SortByName(this Transform[] transforms)
+        {
+            Array.Sort(transforms, (x, y) =>
+                string.Compare(x?.name, y?.name, StringComparison.OrdinalIgnoreCase));
+        }
+
+
+        /// <summary>
         ///     Draws debug ray from Transform in the Vector3 direction displacement
         /// </summary>
         /// <param name="originTrans"></param>

@@ -1,9 +1,7 @@
 {
-  "name": "SOSXR.ExtensionMethods.Editor",
+  "name": "SOSXR.EditorOnlyExtensionMethods",
   "rootNamespace": "",
-  "references": [
-    "SOSXR.ExtensionMethods"
-  ],
+  "references": [],
   "includePlatforms": [
     "Editor"
   ],

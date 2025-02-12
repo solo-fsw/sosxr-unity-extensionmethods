@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SOSXR.Extensions
 {
-    public static class EditorExtensionMethods
+    public static class EditorOnlyExtensionMethods
     {
         /// <summary>
         ///     Allows you to remove any bindings from an AnimationClip, except when that binding contains a word.
