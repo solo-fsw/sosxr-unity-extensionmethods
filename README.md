@@ -1,5 +1,10 @@
 # Extension Methods
 
+## This repo will be archived since it is now included in [Sea Shark](https://github.com/solo-fsw/sosxr-unity-seashark) and maintained there
+
+
+## Usage (deprecated)
+
 This folder contains extension methods for various types in Unity.
 
 
